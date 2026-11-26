@@ -1,0 +1,502 @@
+
+/* ==============================
+   UNIVERSITY ATLAS
+   Modern Editorial Design
+================================ */
+
+:root {
+    --navy: #17243a;
+    --orange: #e78a55;
+    --cream: #f8f6f0;
+    --white: #ffffff;
+    --muted: #a8b0bd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    height: 82px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cream);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: var(--navy);
+    font-size: 19px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.brand-icon {
+    background: var(--navy);
+    color: white;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+}
+
+.brand-light {
+    color: var(--orange);
+}
+
+.nav-tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #858b93;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: var(--navy);
+    color: white;
+    min-height: 600px;
+    padding: 85px 10% 65px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #b6bfce;
+    margin-bottom: 32px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background: var(--orange);
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 7vw, 82px);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: var(--orange);
+    font-style: italic;
+}
+
+.hero-description {
+    color: #b7c0ce;
+    max-width: 470px;
+    line-height: 1.9;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+/* SEARCH BAR */
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    max-width: 590px;
+    margin-top: 38px;
+}
+
+.search-input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0 16px;
+    min-width: 0;
+}
+
+.search-icon {
+    color: var(--orange);
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    min-width: 0;
+    height: 57px;
+    border: none;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--navy);
+}
+
+.search-form button {
+    padding: 0 24px;
+    border: none;
+    background: var(--orange);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-form button:hover {
+    background: #cf7040;
+}
+
+.search-form button span {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.search-note {
+    color: #8793a5;
+    font-size: 11px;
+    margin-top: 13px;
+}
+
+/* DECORATIVE CIRCLES */
+
+.hero-decoration {
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    width: 370px;
+    height: 370px;
+    border: 1px solid #ffffff15;
+    border-radius: 50%;
+}
+
+.circle {
+    position: absolute;
+    border: 1px solid #ffffff20;
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 260px;
+    height: 260px;
+    top: 55px;
+    left: 55px;
+}
+
+.circle-two {
+    width: 145px;
+    height: 145px;
+    top: 112px;
+    left: 112px;
+    background: #e78a5518;
+}
+
+.decoration-text {
+    position: absolute;
+    bottom: 40px;
+    right: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #8995a8;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 25px;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #8995a8;
+}
+
+/* RESULTS SECTION */
+
+.results-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 35px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.section-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.section-heading h2 span {
+    font-style: italic;
+    color: #bd7048;
+}
+
+.result-count {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.result-count strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: var(--orange);
+}
+
+.result-count span {
+    max-width: 75px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    color: #858b93;
+}
+
+/* UNIVERSITY CARDS */
+
+.university-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.university-card {
+    background: white;
+    border: 1px solid #eae7df;
+    padding: 25px;
+    min-height: 245px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #17243a12;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-number {
+    font-size: 11px;
+    color: var(--orange);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.card-arrow {
+    color: #b9bec5;
+    font-size: 20px;
+}
+
+.university-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.card-location {
+    margin-top: auto;
+}
+
+.card-location span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #a1a5aa;
+    font-weight: 700;
+}
+
+.card-location p {
+    font-size: 13px;
+    color: #58616d;
+    margin-top: 6px;
+}
+
+.card-footer {
+    border-top: 1px solid #eeece7;
+    margin-top: 20px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-footer span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #8b929b;
+}
+
+.card-footer a {
+    font-size: 9px;
+    font-weight: 800;
+    color: #bd7048;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow-wrap: anywhere;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ERROR */
+
+.error-message {
+    padding: 20px;
+    background: #fff0e9;
+    color: #a14e34;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--navy);
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+footer p,
+footer span {
+    color: #9ca8ba;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .hero-decoration {
+        right: -170px;
+        opacity: 0.5;
+    }
+
+    .university-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-tag {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 7% 85px;
+        min-height: 610px;
+    }
+
+    .hero h1 {
+        font-size: 49px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button {
+        height: 52px;
+    }
+
+    .hero-bottom {
+        left: 7%;
+        right: 7%;
+        font-size: 8px;
+    }
+
+    .results-section {
+        padding: 60px 20px;
+    }
+
+    .section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .university-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

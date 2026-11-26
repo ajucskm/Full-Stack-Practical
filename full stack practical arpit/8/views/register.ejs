@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration | CampusConnect</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">CampusConnect</a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <main class="register-container">
+
+        <div class="register-heading">
+            <span class="tag">JOIN OUR COMMUNITY</span>
+
+            <h1>Create Your Account</h1>
+
+            <p>Fill in your details to get started with CampusConnect.</p>
+        </div>
+
+        <% if (message) { %>
+            <p class="error-message"><%= message %></p>
+        <% } %>
+
+        <form action="/register" method="POST">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course</label>
+
+                <select id="course" name="course" required>
+                    <option value="">Choose your course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                    minlength="6"
+                    autocomplete="new-password"
+                    required>
+            </div>
+
+            <button type="submit" class="register-btn">
+                Create Account →
+            </button>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="/login">Login here</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CampusConnect. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,561 @@
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #ffffff;
+    padding: 18px 5%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #4a7aec;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #5278d8;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.navigation button {
+    background: transparent;
+    color: #852727;
+    padding: 10px 14px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.navigation button:hover {
+    background: #edf1fc;
+    color: #32b00b;
+}
+
+.navigation .cart-button {
+    background: #3156a3;
+    color: white;
+}
+
+.cart-button span {
+    background: white;
+    color: #05ad15;
+    padding: 2px 7px;
+    border-radius: 20px;
+    margin-left: 4px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    animation: fadeIn 0.3s ease;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: linear-gradient(120deg, #5f6c88, #5278d8);
+    color: white;
+    padding: 55px 45px;
+    border-radius: 18px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    line-height: 1.25;
+    margin: 12px 0;
+}
+
+.hero p {
+    color: #e2e9ff;
+}
+
+.eyebrow {
+    color: #258ca2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+    color: #cbd8ff;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 20px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+    color: #243b70;
+}
+
+.section-heading h3 {
+    color: #243b70;
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(230px, 1fr)
+    );
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 13px;
+    border: 1px solid #edf0f6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.card h3 {
+    color: #243b70;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.card p {
+    color: #666;
+    margin: 8px 0;
+}
+
+.card b {
+    color: #3156a3;
+    font-size: 20px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.card button,
+.primary-button {
+    background: #3156a3;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.card button:hover,
+.primary-button:hover {
+    background: #243b70;
+}
+
+.secondary-button {
+    background: #e9edf6;
+    color: #243b70;
+    padding: 11px 18px;
+    border-radius: 7px;
+}
+
+.secondary-button:hover {
+    background: #dce3f2;
+}
+
+
+/* =========================
+   CONTENT CARDS
+========================= */
+
+.content-card {
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    margin: 15px 0;
+}
+
+.content-card h3 {
+    color: #243b70;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   INPUTS AND FORMS
+========================= */
+
+form {
+    margin: 15px 0;
+}
+
+form label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #444;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8deea;
+    border-radius: 7px;
+    outline: none;
+    background: #fff;
+}
+
+input:focus {
+    border-color: #5278d8;
+    box-shadow: 0 0 0 3px rgba(82, 120, 216, 0.12);
+}
+
+form button {
+    margin-top: 15px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.cart-summary {
+    background: #f5f7fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.cart-summary h3 {
+    color: #243b70;
+}
+
+.cart-summary #total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3156a3;
+    margin: 15px 0;
+}
+
+.payment-note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 12px;
+}
+
+#checkoutMessage {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SELLER AND ORDER ITEMS
+========================= */
+
+#sellerProducts > p,
+#ordersList .card {
+    margin: 12px 0;
+}
+
+#sellerProducts > p {
+    background: white;
+    padding: 17px;
+    border-radius: 9px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#sellerProducts button {
+    background: #dc3545;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 6px;
+}
+
+#sellerProducts button:hover {
+    background: #b52a37;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #777;
+    font-size: 13px;
+    margin-top: 50px;
+    border-top: 1px solid #e5e9f2;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation button {
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 35px 25px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 0 14px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 18px;
+    }
+}
+
+/* =========================
+   PAYMENT MODAL
+========================= */
+
+.payment-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 25, 50, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.payment-box {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.payment-box h2 {
+    color: #243b70;
+    text-align: center;
+    font-size: 25px;
+}
+
+.payment-subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.payment-amount {
+    background: #f0f4ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.payment-amount span {
+    color: #666;
+    font-size: 13px;
+}
+
+.payment-amount h1 {
+    color: #3156a3;
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.payment-box h3 {
+    color: #243b70;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    border: 1px solid #e0e5ef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.payment-options label:hover {
+    background: #f5f7fc;
+    border-color: #5278d8;
+}
+
+.payment-options input {
+    width: auto;
+    margin: 0;
+    accent-color: #3156a3;
+}
+
+.payment-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-actions button {
+    width: 100%;
+    padding: 12px;
+}
+
+.failure-button {
+    background: #dc3545;
+    color: white;
+    border-radius: 7px;
+}
+
+.failure-button:hover {
+    background: #b52a37;
+}
+
+.demo-warning {
+    text-align: center;
+    color: #888;
+    font-size: 11px;
+    margin-top: 18px;
+}
+
+@media (max-width: 500px) {
+    .payment-box {
+        padding: 22px;
+    }
+}

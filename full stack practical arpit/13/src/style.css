@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111b21;
+  background-color: #efeae2;
+  background-image: radial-gradient(#d1d7db 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* WhatsApp Top Teal Header */
+.hero {
+  background: #008069;
+  color: #ffffff;
+  padding: 28px max(7%, calc((100% - 1000px) / 2)) 75px;
+  box-shadow: 0 2px 5px rgba(11, 20, 26, 0.15);
+}
+
+.hero nav {
+  display: flex;
+  gap: 22px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.hero nav a {
+  color: #e9edef;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 18px;
+  transition: background 0.2s;
+}
+
+.hero nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.hero .eyebrow {
+  margin-top: 60px;
+  letter-spacing: 2px;
+  color: #d9fdd3;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 68px);
+  margin: 8px 0;
+}
+
+.hero h2 {
+  font-weight: 400;
+  color: #e9edef;
+  margin-top: 0;
+}
+
+.hero p {
+  color: #e9edef;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* WhatsApp Action Button */
+.button {
+  display: inline-block;
+  background: #25d366;
+  color: #111b21;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  margin-top: 16px;
+  box-shadow: 0 2px 6px rgba(11, 20, 26, 0.2);
+  transition: background 0.2s, transform 0.15s;
+}
+
+.button:hover {
+  background: #20bd5a;
+  transform: translateY(-1px);
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+}
+
+section {
+  padding: 32px 0;
+  border-bottom: 1px solid #d1d7db;
+}
+
+section h2 {
+  color: #008069;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* Outgoing Message Bubble Style for Skill Chips */
+.chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chips span {
+  background: #d9fdd3;
+  color: #111b21;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 12px 12px 2px 12px;
+  box-shadow: 0 1px 2px rgba(11, 20, 26, 0.13);
+}
+
+/* Incoming Message Bubble Style for Project Cards & About */
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cards article,
+#about p {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 2px 12px 12px 12px;
+  box-shadow: 0 1px 3px rgba(11, 20, 26, 0.13);
+  line-height: 1.5;
+}
+
+.cards article {
+  flex: 1 1 260px;
+  border-top: 3px solid #25d366;
+}
+
+.cards article h3 {
+  margin-top: 0;
+  color: #111b21;
+}
+
+a {
+  color: #027eb5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #54656f;
+  font-size: 14px;
+}

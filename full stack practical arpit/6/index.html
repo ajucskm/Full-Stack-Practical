@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="joke-card">
+    <div class="header">
+      <span class="emoji">🤓</span>
+      <h1>Faltu Joke Generator</h1>
+    </div>
+
+    <div class="controls-top">
+      <label for="category-select">Category:</label>
+      <select id="category-select">
+        <option value="Any">Any Category</option>
+        <option value="Programming">Programming</option>
+        <option value="Misc">General / Misc</option>
+        <option value="Pun">Pun</option>
+      </select>
+    </div>
+
+    <div class="joke-box">
+      <p id="setup-text" class="setup">Click "Get New Jokes" to shuru kro laughing!</p>
+      <p id="punchline-text" class="punchline"></p>
+    </div>
+
+    <p id="status-msg" class="status"></p>
+
+    <div class="button-group">
+      <button id="new-joke-btn" class="primary-btn">Get New Joke</button>
+      <button id="copy-btn" class="secondary-btn" disabled>Copy Joke</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

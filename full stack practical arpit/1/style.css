@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9fa;
+}
+
+/* Radius = 30px -> Diameter = 60px */
+.circle-outer {
+  width: 100px;
+  height: 100px;
+  background-color: #ff595e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Radius = 20px -> Diameter = 40px */
+.circle-middle {
+  width: 80px;
+  height: 80px;
+  background-color: #ffca3a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Radius = 10px -> Diameter = 20px */
+.circle-inner {
+  width: 60px;
+  height: 60px;
+  background-color: #1982c4;
+  border-radius: 50%;
+}

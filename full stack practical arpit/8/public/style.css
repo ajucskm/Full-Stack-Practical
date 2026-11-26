@@ -1,0 +1,133 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #01082f;
+    color: #252744;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: #171b3b;
+    padding: 22px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    color: #83d903;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3c3564;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main {
+    max-width: 750px;
+    width: 90%;
+    margin: 85px auto;
+    padding: 55px 45px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(30, 35, 80, 0.08);
+    text-align: center;
+    border: 1px solid #ededf5;
+}
+
+/* Heading */
+h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #252957;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    color: #73768e;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+/* Forms */
+form {
+    margin-top: 30px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 16px 0;
+    border: 1px solid #dedfee;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+    transition: 0.3s;
+    background: #fafaff;
+}
+
+input:focus {
+    border-color: #8170ed;
+    box-shadow: 0 0 0 3px rgba(129, 112, 237, 0.12);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #8170ed, #5947c7);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(89, 71, 199, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        gap: 18px;
+        padding: 20px 10px;
+    }
+
+    main {
+        margin: 45px auto;
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

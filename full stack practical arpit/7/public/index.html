@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Atlas | Discover Your Future</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <a href="/" class="brand">
+            <span class="brand-icon">K</span>
+            <span>university<span class="brand-light">atlas.</span></span>
+        </a>
+
+        <span class="nav-tag">
+            THE GLOBAL UNIVERSITY DIRECTORY
+        </span>
+
+    </nav>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    <span class="dot"></span>
+                    YOUR JOURNEY STARTS HERE
+                </span>
+
+                <h1>
+                    Find a place<br>
+                    to <span>become</span><br>
+                    extraordinary.
+                </h1>
+
+                <p class="hero-description">
+                    Explore universities around the world.
+                    Discover institutions, explore their locations
+                    and take the first step towards your future.
+                </p>
+
+
+                <!-- Search Form -->
+                <form id="searchForm" class="search-form">
+
+                    <div class="search-input-wrapper">
+
+                        <span class="search-icon">⌕</span>
+
+                        <input
+                            type="text"
+                            id="countryInput"
+                            placeholder="Enter a country, e.g. India"
+                            required
+                        >
+
+                    </div>
+
+                    <button type="submit">
+                        Explore <span>↗</span>
+                    </button>
+
+                </form>
+
+                <p class="search-note">
+                    Discover institutions from across the globe.
+                </p>
+
+            </div>
+
+
+            <!-- Decorative Design -->
+            <div class="hero-decoration">
+
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+
+                <div class="decoration-text">
+                    <span>01 / EXPLORE</span>
+                    <span>LEARN. GROW. DISCOVER.</span>
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+                <span>EDUCATION HAS NO BORDERS.</span>
+                <span>SCROLL TO EXPLORE ↓</span>
+            </div>
+
+        </section>
+
+
+        <!-- Results Section -->
+        <section class="results-section" id="resultsSection" hidden>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        YOUR DISCOVERY
+                    </span>
+
+                    <h2>
+                        Universities in
+                        <span id="countryName"></span>
+                    </h2>
+
+                </div>
+
+                <div class="result-count">
+
+                    <strong id="resultCount">0</strong>
+
+                    <span>INSTITUTIONS FOUND</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Error Message -->
+            <div class="error-message" id="errorMessage" hidden></div>
+
+
+            <!-- University Cards -->
+            <div class="university-grid" id="universityGrid"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <a href="/" class="footer-brand">
+            universityatlas.
+        </a>
+
+        <p>
+            EXPLORE KNOWLEDGE. DISCOVER POSSIBILITIES.
+        </p>
+
+        <span>
+            © 2026 UNIVERSITY ATLAS
+        </span>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

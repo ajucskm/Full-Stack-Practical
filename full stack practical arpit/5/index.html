@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake and Ladder Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>Snake & Ladder</h1>
+
+    <div class="board-wrapper">
+      <div id="board" class="board"></div>
+      <svg id="overlay" class="overlay"></svg>
+    </div>
+
+    <div class="controls">
+      <div class="player-info">
+        <span class="badge p1-badge">Player 1</span>
+        <span class="badge p2-badge">Player 2</span>
+      </div>
+
+      <p id="status-text">Player 1's Turn</p>
+      <div id="dice-display" class="dice">🎲</div>
+
+      <div class="btn-group">
+        <button id="roll-btn">Roll Dice</button>
+        <button id="reset-btn">Reset Game</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  

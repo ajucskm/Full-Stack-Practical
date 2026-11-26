@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 560px;
+  width: 100%;
+}
+
+h1 {
+  color: #1e293b;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+/* Board & SVG Overlay */
+.board-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  border: 4px solid #334155;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.cell {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #475569;
+  position: relative;
+}
+
+.cell:nth-child(odd) {
+  background-color: #f8fafc;
+}
+
+.cell:nth-child(even) {
+  background-color: #e2e8f0;
+}
+
+/* Highlight Snake Heads & Ladder Bases */
+.cell.snake-head {
+  background-color: #fee2e2;
+}
+
+.cell.ladder-base {
+  background-color: #dcfce7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Player Tokens */
+.tokens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  z-index: 2;
+  margin: auto 0;
+}
+
+.token {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.p1-token {
+  background-color: #230202;
+}
+
+.p2-token {
+  background-color: #3b82f6;
+}
+
+/* Controls Section */
+.controls {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.player-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.p1-badge {
+  background-color: #ef4444;
+}
+
+.p2-badge {
+  background-color: #3b82f6;
+}
+
+#status-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 8px 0;
+}
+
+.dice {
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#roll-btn {
+  background-color: #3820c4;
+  color: white;
+}
+
+#reset-btn {
+  background-color: #64748b;
+  color: white;
+}
